@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+  <!--   <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>互联网七大巨头</title>
+    <link href="boot/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <style type="text/css">
+      body{
+        padding-top: 50px;
+      }
+      .carousel{
+        height: 400px;
+        background-color: #000;
+        margin-bottom: 60px;
+      }
+      .carousel .item{
+        height: 400px;
+        background-color: #000;
+      }
+      .carousel .item img{
+        width: 100%;
+      }
+      .carousel .item .carousel-caption{
+        font-size: 28px;
+      }
+      #summary-container .col-md-4{
+        text-align: center;
+      }
+      #summary-container .col-md-4 p{
+        color: #2f4f4f;
+        font-size: 18px;
+      }
+      .feature-divider {
+        margin: 40px 0;
+      }
+  </style>  
+  </head>
+  <body>
+  <!-- 顶部导航 -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="menu-nav">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">七大巨头</a>
+            </div>
+
+    
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><!-- 缩小窗口后，出现三条线 -->
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">简介</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">分类 <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#tab-baidu" data-tab="tab-baidu">百度</a></li>
+                    <li><a href="#tab-tengxun" data-tab="tab-tengxun">腾讯</a></li>
+                    <li><a href="#tab-alibaba" data-tab="tab-alibaba">阿里巴巴</a></li>
+                    <li><a href="#tab-wangyi" data-tab="tab-wangyi">网易</a></li>
+                    <li><a href="#tab-xinlang" data-tab="tab-xinlang">新浪</a></li>
+                    <li><a href="#tab-souhu" data-tab="tab-souhu">搜狐</a></li>
+                    <li><a href="#tab-shengda" data-tab="tab-shengda">盛大</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于 </a>
+                </li>  
+              </ul>
+            </div>
+        </div>
+    </div>
+<!-- 广告轮播 -->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+      </ol>
+
+
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="images/bd1.jpg" alt="">
+          <div class="carousel-caption">
+            百度，全球最大的中文搜索引擎。
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/tx1.jpg" alt="">
+          <div class="carousel-caption">
+            腾讯，中国最大的互联网综合服务提供商之一。
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/al1.jpg" alt="">
+          <div class="carousel-caption">
+            阿里巴巴，中国最大的网络公司和世界第二大网络公司。
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/wy1.jpg" alt="">
+          <div class="carousel-caption">
+            网易 ，中国领先的互联网技术公司。
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/xl1.jpg" alt="">
+          <div class="carousel-caption">
+           新浪，以服务大中华地区与海外华人为己任。
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/sh1.jpg" alt="">
+          <div class="carousel-caption">
+            搜狐，一个具有影响力与公信力的新闻中心。
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/sd1.jpg" alt="">
+          <div class="carousel-caption">
+            盛大，领先的互动娱乐媒体企业。
+          </div>
+        </div>
+      </div>
+
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </a>
+    </div>
+<!-- 主要内容 -->
+    <div class="container" id="summary-container" >
+     <div class="row">
+         <div class="col-md-4">
+             <img class="img-circle" src="images/bd.jpg"/>
+             <h2>百度</h2>
+             <p>百度,全球最大的搜索引擎。</p>
+         </div>
+         <div class="col-md-4">
+             <img class="img-circle" src="images/tx.jpg"/>
+             <h2>腾讯</h2>
+             <p>腾讯，中国最大的互联网综合服务提供商之一。</p>
+         </div>
+         <div class="col-md-4">
+             <img class="img-circle" src="images/al.jpg"/>
+             <h2>阿里巴巴</h2>
+             <p>阿里巴巴，中国最大的网络公司。</p>
+         </div>
+    </div
+    <hr class="feature-divider">
+    <ul class="nav nav-tabs" role="tablist" id="feature-tab">
+        <li class="active"><a href="#tab-baidu" role="tab" data-toggle="tab">百度</a></li>
+        <li><a href="#tab-tengxun" role="tab" data-toggle="tab">腾讯</a></li>
+        <li><a href="#tab-alibaba" role="tab" data-toggle="tab">阿里巴巴</a></li>
+        <li><a href="#tab-wangyi" role="tab" data-toggle="tab">网易</a></li>
+        <li><a href="#tab-xinlang" role="tab" data-toggle="tab">新浪</a></li>
+        <li><a href="#tab-souhu" role="tab" data-toggle="tab">搜狐</a></li>
+        <li><a href="#tab-shengda" role="tab" data-toggle="tab">盛大</a></li>
+    </ul>
+
+    <div class="tab-content">
+
+        <div class="tab-pane active" id="tab-baidu">
+            <div class="row feature">
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading">百度 </h2>
+
+                    <p class="lead">百度（Nasdaq：BIDU）是全球最大的中文搜索引擎，2000年1月由李彦宏、徐勇两人创立于北京中关村，百度致力于向人们提供“简单，可依赖”的信息获取方式。“百度”二字源于中国宋朝词人辛弃疾的《青玉案》诗句：“众里寻他千百度”，象征着百度对中文信息检索技术的执著追求。于2005年8月5日在纳斯达克上市。</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="images/baidu.jpg"
+                         alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane" id="tab-tengxun">
+            <div class="row feature">
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="images/tengxun.jpg"
+                         alt="">
+                </div>
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading">腾讯</h2>
+
+                    <p class="lead">腾讯成立于1998年11月，由马化腾、张志东、许晨晔、陈一丹、曾李青五位创始人共同创立。 是中国最大的互联网综合服务提供商之一，也是中国服务用户最多的互联网企业之一。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane" id="tab-alibaba">
+            <div class="row feature">
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading">阿里巴巴 </h2>
+
+                    <p class="lead">阿里巴巴（英语：Alibaba Corporation；纽交所，证券代码“BABA”），中国最大的网络公司和世界第二大网络公司，是由马云在1999年一手创立企业对企业的网上贸易市场平台。</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="images/alibaba.jpg"
+                         alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane" id="tab-wangyi">
+            <div class="row feature">
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="images/wangyi.jpg"
+                         alt="">
+                </div>
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading">网易 </h2>
+
+                    <p class="lead">网易 (NASDAQ: NTES)是中国领先的互联网技术公司，利用最先进的互联网技术，加强人与人之间信息的交流和共享，实现“网聚人的力量”。创始人兼CEO是丁磊。</p>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="tab-pane" id="tab-xinlang">
+            <div class="row feature">
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading">新浪 </h2>
+
+                    <p class="lead">新浪(NASDAQ:SINA)，是一家网络公司的名称，以服务大中华地区与海外华人为己任，新浪拥有多家地区性网站，通过旗下五大业务主线为用户提供网络服务，网下的北京新浪、香港新浪、台北新浪、北美新浪等覆盖全球华人社区的全球最大中文门户网站，2012年11月新浪注册用户已突破4亿。</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="images/xinlang.jpg"
+                         alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane" id="tab-souhu">
+            <div class="row feature">
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="images/souhu.jpg"
+                         alt="">
+                </div>
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading">搜狐 </h2>
+
+                    <p class="lead">搜狐是一个具有影响力与公信力的新闻中心、联动娱乐市场，跨界经营的娱乐中心、深受体育迷欢迎的体育中心、引领潮流的时尚文化中心。"搜狐"在中国是家喻户晓的名字。搜狐公司是2008北京奥运会互联网内容服务赞助商，是中国网民上网冲浪的首选门户网站。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane" id="tab-shengda">
+            <div class="row feature">
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading">盛大 </h2>
+
+                    <p class="lead">上海盛大网络发展有限公司，1999年12月29日成立，经营范围包括从事货物与技术的进出口业务，计算机软件开发，网络工程安装，计算机软硬件、办公设备、文教用品、服装的销售，承接各类广告设计、制作，游戏作品互联网出版业务，第二类增值电信业务中的信息服务业务，计算机信息系统安全专用产品的生产、销售等。</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="images/shengda.jpg"
+                         alt="">
+                </div>
+            </div>
+        </div>
+
+      </div>  
+    </div>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="boot/jquery-3.1.0.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="boot/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script>
+       $(document).ready(function(){
+           $("#bs-example-navbar-collapse-1 .dropdown-menu a").click(function(){
+            var href=$(this).attr("href");
+            $("#feature-tab a[href='"+href+"']").tab("show");
+           })
+
+       });
+    </script>
+  </body>
+</html>

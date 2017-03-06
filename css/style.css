@@ -1,0 +1,21 @@
+body{
+  padding-top: 50px;
+}
+.carousel{
+  height: 400px;
+  background-color: #000;
+  margin-bottom: 60px;
+}
+.carousel .item{
+  height: 400px;
+  background-color: #000;
+}
+.carousel .item img{
+  width: 100%;
+}
+#summary-container .col-md-4{
+  text-align: center;
+}
+.feature-divider {
+  margin: 40px 0;
+}
